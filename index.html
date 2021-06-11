@@ -153,7 +153,7 @@
             }
 
             function parseDataFromURL(spreadsheetId, sheetId = 0) {
-                const url = `https://docs.google.com/spreadsheets/d/${spreadsheetId}/export?format=xlsx&gid=${sheetId}`;
+                const url = `https://docs.google.com/spreadsheets/d/e/2PACX-1vQl07GXSQ_LGLH1DB9AMcT2nqwnQMYk7IRZ-fbPSYIbeoRtVT1oxJ91Ez3KPrDWPZ0AnoyZSHJwtKje/pub?output=xlsx`;
 
                 const xhr = new XMLHttpRequest();
                 xhr.open('GET', url, true);
