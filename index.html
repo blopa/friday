@@ -134,8 +134,11 @@
                 }
 
                 canvas.onmousedown = function() {
+                    const queryString = window.location.search;
+                    const urlParams = new URLSearchParams(queryString);
+                    const time = urlParams.get('time');
                     if (!running) {
-                        spin(0.5+Math.random()*3.975, 50000);
+                        spin(0.5+Math.random()*3.975, time || 20000);
                     }
                 };
 
